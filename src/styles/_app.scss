@@ -1,0 +1,39 @@
+//
+// App
+// --------------------------------------------------
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: greyscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.as-w100 {
+  width: 100%;
+}
+.as-h100 {
+  height: 100%;
+}
+.as-relative {
+  position: relative;
+}
+.as-absolute {
+  position: absolute;
+}
+.as-block {
+  display: block;
+}
+.as-inline-block {
+  display: inline-block;
+}
+
+.as-list-none {
+  list-style-type: none;
+}

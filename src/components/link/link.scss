@@ -1,0 +1,16 @@
+.as-link {
+  cursor: pointer;
+  touch-action: manipulation;
+  font-weight: bold;
+  position: relative;
+  color: $primary-light;
+  &:hover {
+    text-decoration: underline;
+    outline: none;
+    color: $primary-dark;
+  }
+  &:focus,
+  &:active {
+    color: $primary-dark;
+  }
+}

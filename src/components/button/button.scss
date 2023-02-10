@@ -1,0 +1,125 @@
+.as-button {
+	font-size: rem(12px);
+	font-weight: normal;
+	letter-spacing: 1px;
+
+	position: relative;
+	overflow: visible;
+	text-align: side(left);
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.1s ease-in-out;
+	transition-property: color, background-color, border-color;
+	touch-action: manipulation;
+	cursor: pointer;
+	outline: none;
+	font-family: inherit;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: transparent;
+	border-color: transparent;
+	color: inherit;
+	border-radius: rem(2px);
+
+	padding: 0 rem(20px);
+	height: rem(44px);
+	line-height: rem(42px);
+	min-width: rem(44px);
+	&:disabled {
+		opacity: $alpha-60;
+		cursor: default;
+	}
+}
+
+.as-ta-left { text-align: side(left); }
+.as-ta-center { text-align: center; }
+.as-ta-right { text-align: side(right); }
+.as-ta-inherit { text-align: inherit; }
+
+.as-button--primary,
+.as-button--with-icon-primary {
+	color: $white;
+	background-color: $primary-dark;
+	border: 1px solid transparent;
+	&:hover,
+	&.as-button--active:hover
+	{
+		background-color: $primary-medium;
+		border: 1px solid transparent;
+	}
+	&:active,
+	&.as-button--active:active,
+	&.as-button--active {
+		background-color: $primary-medium;
+		border: 1px solid transparent;
+	}
+	&:disabled {
+		background-color: $primary-light;
+		border: 1px solid transparent;
+	}
+}
+
+.as-button--secondary {
+	color: $white;
+	background-color: $secondary-dark;
+	border: 1px solid transparent;
+	&:hover,
+	&.as-button--active:hover
+	{
+		background-color: $secondary-medium;
+		border: 1px solid transparent;
+	}
+	&:active,
+	&.as-button--active:active,
+	&.as-button--active {
+		background-color: $secondary-medium;
+		border: 1px solid transparent;
+	}
+	&:disabled {
+		background-color: $secondary-light;
+		border: 1px solid transparent;
+	}
+}
+
+.as-button--tertiary {
+	color: $white;
+	background-color: $success-dark;
+	border: 1px solid transparent;
+	&:hover,
+	&.as-button--active:hover,
+	&:focus {
+		background-color: $success-medium;
+	}
+	&:active,
+	&.as-button--active:active,
+	&.as-button--active {
+		background-color: $success-medium;
+	}
+	&:disabled {
+		background-color: $success-light;
+		border: 1px solid transparent;
+	}
+}
+
+.as-button--danger {
+	color: $white;
+	background-color: $danger-dark;
+	border: 1px solid transparent;
+	&:hover,
+	&.as-button--active:hover,
+	&:focus {
+		background-color: $danger-medium;
+	}
+	&:active,
+	&.as-button--active:active,
+	&.as-button--active {
+		background-color: $danger-medium;
+	}
+	&:disabled {
+		background-color: $danger-light;
+	}
+}
+
+.as-button--pill {
+	border-radius: 1000px;
+}

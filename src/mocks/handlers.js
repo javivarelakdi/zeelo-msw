@@ -8,19 +8,35 @@ export const handlers = [
       ctx.json([
         {
           id: 0,
-          image: "https://upload.wikimedia.org/wikipedia/en/4/4a/TheHobbit_FirstEdition.jpg",
           title: "The Hobbit",
           author: "JRR Tolkien",
-          price: 26.99
         },
         {
           id: 1,
-          image: "https://upload.wikimedia.org/wikipedia/en/8/8e/The_Fellowship_of_the_Ring_cover.gif",
           title: "The Fellowship of the Ring",
           author: "JRR Tolkien",
-          price: 26.99
+        },
+        {
+          id: 2,
+          title: "The Two Towers",
+          author: "JRR Tolkien",
+        },
+        {
+          id: 3,
+          title: "The Return of the King",
+          author: "JRR Tolkien",
         }
       ])
+    )
+  }),
+ 
+  rest.post('/items', (req, res, ctx) => {
+    return res(
+      ctx.json({
+        id: 4,
+        title: req.body,
+        author: "JRR Tolkien",
+      })
     )
   }),
 
